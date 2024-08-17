@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+                
+</head>
+<body>
+  <div class="container">
+    <div>
+        <h3>HOME</h3>
+        <p class="scoreTeam" id="score-Team1">0</p>
+        <button class="btn" onclick="add1()">+1</button>
+        <button class="btn" onclick="add2()">+2</button>
+        <button class="btn" onclick="add3()">+3</button>
+
+        <h2>Team Fouls</h2>
+        <p class="scoreFoul" id="scoreFoul-1">0</p>
+        <button class="btn" onclick="addfoul()">+1</button>
+    </div>
+
+    <div id="timerContainer">
+      <div id="timer">12:00</div>
+      <button class="btn1" id="startButton">></button>
+      <button class="btn1" id="stopButton">||</button><br>
+      <button id="btn-newG" class="btn" onclick="newGame()">New Game</button>
+    </div>
+
+
+
+
+    <div>
+        <h3>GUEST</h3>
+        <p class="scoreTeam" id="score-Team2">0</p>
+        <button class="btn" onclick="add1B()">+1</button>
+        <button class="btn" onclick="add2B()">+2</button>
+        <button class="btn" onclick="add3B()">+3</button>
+
+        <h2>Team Fouls</h2>
+        <p class="scoreFoul" id="scoreFoul-2">0</p>
+        <button class="btn" onclick="addfoul2()">+1</button>
+    </div>
+</div>
+
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
